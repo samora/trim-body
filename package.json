@@ -1,6 +1,6 @@
 {
   "name": "trim-body",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Trim parsed request body or any object that needs its strings trimmed in one go.",
   "main": "index.js",
   "directories": {
