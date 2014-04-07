@@ -1,6 +1,6 @@
 # trim-body
 
-[![Build Status](https://travis-ci.org/samora/trim-body.svg?branch=master)](https://travis-ci.org/samora/trim-body)
+[![Build Status](https://travis-ci.org/samora/trim-body.svg)](https://travis-ci.org/samora/trim-body)
 
 Trim parsed request body or any object with strings that needs trimming in one go.
 
