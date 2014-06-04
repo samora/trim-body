@@ -10,7 +10,7 @@ module.exports = trimBody;
  * @param {object} body
  */
 function trimBody(body){
-  if (typeof body === 'object') {
+  if (Object.prototype.toString.call(body) === '[object Object]') {
     Object.keys(body).forEach(function (key){
       var value = body[key];
 

@@ -17,4 +17,12 @@ describe('trim-body', function() {
     body.name.last.should.be.equal('Last');
     body.email.should.be.equal('user@example.com');
   });
+
+  it('should not work', function () {
+    var body = [1, 2, 3]
+
+    trimBody(body)
+
+    body.length.should.equal(3)
+  })
 });
