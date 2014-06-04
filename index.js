@@ -10,13 +10,15 @@ module.exports = trimBody;
  * @param {object} body
  */
 function trimBody(body){
-  Object.keys(body).forEach(function (key){
-    var value = body[key];
+  if (typeof body === 'object') {
+    Object.keys(body).forEach(function (key){
+      var value = body[key];
 
-    if (typeof value === 'string')
-      return body[key] = value.trim();
+      if (typeof value === 'string')
+        return body[key] = value.trim();
 
-    if (typeof value === 'object')
-      trimBody(value);
-  });
+      if (typeof value === 'object')
+        trimBody(value);
+    });
+  }
 }
